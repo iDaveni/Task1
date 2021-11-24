@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+$bg-color-red: rgb(199, 37, 53);
+$color-wight: #fff;
+$bg-color-wight: rgb(216, 207, 207);
+
+body {
+  padding: 20px;
+}
+#input {
+  background-color: transparent;
+  width: 350px;
+  transform: skewX(20deg);
+  max-width: 100%;
+  @media (max-width: 767px) {
+    transform: skewX(0);
+    width: 100%;
+    max-width: 200px;
+  }
+}
+#btn {
+  background-color: $bg-color-red;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: $color-wight;
+  @media (max-width: 767px) {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+.btnno {
+  transform: skewX(20deg);
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    transform: skewX(0);
+  }
+}
+.form_desktop {
+  padding: 2px;
+  transform: skewX(-30deg);
+  background-color: $bg-color-wight;
+  display: flex;
+  opacity: 0.85;
+  @media (max-width: 767px) {
+    transform: skewX(0);
+  }
+}
+
+.wrapper_form {
+  background-image: url(./asset/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
