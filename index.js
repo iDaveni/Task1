@@ -1,6 +1,5 @@
 import "./style.scss";
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const url = "https://todo-fe57.herokuapp.com/todo";
   const input = document.getElementById("input");
@@ -19,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.info("Ответ", response);
         return response;
       })
-      .catch((response) => response.json(console.log("error")));
+      .catch((response) =>
+        response.json(console.log("Поле не может быть пустым!"))
+      );
   });
 });
