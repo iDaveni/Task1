@@ -6,6 +6,11 @@
 $bg-color-red: rgb(199, 37, 53);
 $color-wight: #fff;
 $bg-color-wight: rgb(216, 207, 207);
+$color-black: black;
+
+.svg-inline--fa {
+  font-size: 50px;
+}
 
 body {
   padding: 20px;
@@ -21,15 +26,15 @@ body {
     max-width: 200px;
   }
 }
-#btn {
+.btn {
   background-color: $bg-color-red;
   border: none;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 0 20px;
   font-size: 20px;
   color: $color-wight;
   @media (max-width: 767px) {
-    padding: 10px 0;
+    padding: 1px 0;
     font-size: 14px;
   }
 }
@@ -73,4 +78,11 @@ input {
 
 input:focus {
   outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: $color-black;
+  -webkit-transition: all 0s 50000s;
 }
